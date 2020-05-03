@@ -1,10 +1,6 @@
-<div class="row">
-  <div class="col-sm-10 offset-sm-1">
-    <div class="card w-75 mx-auto" routerLink="/detail/1">
-      <img src="http://lorempixel.com/400/100/food/food/" alt="" class="card-img-top">
-      <div class="card-body">
-        <p class="card-text text-capitalize text-truncate">brodiums experimentum! Buxums observare in lentia!Sunt apolloniateses fallere brevis, grandis fluctuies.</p>
-      </div>
-    </div>
+<div class="card w-75 mx-auto" routerLink="/detail/{{ offer.id }}">
+  <img src="{{ offer.image }}" alt="" class="card-img-top">
+  <div class="card-body">
+    <p class="card-text text-capitalize text-truncate">{{ offer.description }}</p>
   </div>
 </div>
