@@ -8,7 +8,6 @@ import { Router } from "@angular/router";
 })
 export class AppComponent implements OnInit{
   showSplashScreen: boolean = true;
-
   constructor(private router: Router) {
   }
 
