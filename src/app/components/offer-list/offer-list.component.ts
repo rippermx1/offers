@@ -7,7 +7,6 @@ import Offer from "../../classes/Offer";
   styleUrls: ['./offer-list.component.css']
 })
 export class OfferListComponent implements OnInit {
-
   offer_list: Offer[] = [];
 
   constructor() { }
