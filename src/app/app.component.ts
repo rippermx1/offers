@@ -1,10 +1,20 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Router } from "@angular/router";
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  title = 'offers';
+export class AppComponent implements OnInit{
+  showSplashScreen: boolean = true;
+
+  constructor(private router: Router) {
+  }
+
+  public ngOnInit() {
+    setTimeout(() => {
+      this.showSplashScreen = false;
+    },2000)
+  }
 }

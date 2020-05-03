@@ -7,6 +7,7 @@ import { OfferComponent } from './components/offer/offer.component';
 import { OfferListComponent } from './components/offer-list/offer-list.component';
 import { LoadingComponent } from './components/loading/loading.component';
 import { SplashScreenComponent } from './components/splash-screen/splash-screen.component';
+import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { SplashScreenComponent } from './components/splash-screen/splash-screen.
     OfferComponent,
     OfferListComponent,
     LoadingComponent,
-    SplashScreenComponent
+    SplashScreenComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

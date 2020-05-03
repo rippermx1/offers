@@ -1,2 +1,6 @@
-<app-splash-screen></app-splash-screen>
-<!--<app-offer-list></app-offer-list>-->
+<!--<app-splash-screen *ngIf="showSplashScreen"></app-splash-screen>-->
+
+<div *ngIf="!showSplashScreen">
+  <app-header></app-header>
+  <app-offer-list></app-offer-list>
+</div>
