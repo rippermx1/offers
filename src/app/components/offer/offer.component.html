@@ -1,6 +1,12 @@
-<div class="card mx-2" routerLink="/detail/{{ offer.id }}">
+<div class="card mx-2" data-toggle="collapse" attr.data-target="#offer{{offer.id}}" aria-expanded="false" aria-controls="collapseExample">
   <img src="{{ offer.image }}" alt="" class="card-img-top">
-  <div class="card-body">
-    <p class="card-text text-capitalize text-truncate">{{ offer.description }}</p>
+  <div class="collapse" id="offer{{offer.id}}">
+    <div class="card card-body">
+      <h6 class="card-subtitle mb-2 text-muted"><span class="text-success text-decoration-none">{{offer.discount}}% Descuento - </span> <a target="_blank" href="{{offer.storeUrl}}">Ir a tienda...</a></h6>
+      <div class="row">
+        <div class="col-8"><p>{{offer.description}}</p></div>
+        <div class="col-4"><img class="img-thumbnail" src="./assets/{{offer.storeImage}}" alt=""></div>
+      </div>
+    </div>
   </div>
 </div>
