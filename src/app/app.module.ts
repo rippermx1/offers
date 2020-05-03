@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { OfferComponent } from './components/offer/offer.component';
 import { OfferListComponent } from './components/offer-list/offer-list.component';
 import { LoadingComponent } from './components/loading/loading.component';
+import { SplashScreenComponent } from './components/splash-screen/splash-screen.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     OfferComponent,
     OfferListComponent,
-    LoadingComponent
+    LoadingComponent,
+    SplashScreenComponent
   ],
   imports: [
     BrowserModule,
